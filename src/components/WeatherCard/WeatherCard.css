@@ -1,0 +1,140 @@
+.weather-card {
+    position: relative;
+    float: left;
+    width: 40%;
+    margin: 0 5% 1.5% 5%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding-top: 1%;
+    border-radius: 8%;
+    color:white;
+    font-size: 1.2rem;
+    animation: fadeIn 1.5s;
+}
+
+.single {
+    float: none;
+    overflow: auto;
+    margin: 0 auto 1.5% auto;
+    height: 90%;
+    width: 60%;
+}
+
+h4 {
+    margin-top: 6%;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.weather-details {
+    position: relative;
+    top: 2%;
+}
+
+.sun-details {
+    position: relative;
+}
+
+.icon-sunrise {
+    left: 6%;
+}
+
+.icon-sunset {
+    right: 6%;
+}
+
+.val-sunrise {
+    left: 17%;
+    padding-top: -2%;
+}
+
+.val-sunset {
+    right: 17%;
+    padding-top: -2%;
+}
+
+
+p[class^="val-"] {
+    position: absolute;
+    float: left;
+    margin-top: 1%;
+}
+
+.val-1 {
+    left: 14%;
+}
+
+.val-2 {
+    left: 35%;
+}
+
+.val-3 {
+    left: 60%;
+}
+
+.val-4 {
+    left: 81%;
+}
+
+img[class^="icon-"] {
+    position: absolute;
+    width: 6%;
+    height: auto;
+}
+
+.icon-1 {
+    left: 6%;
+}
+
+.icon-2 {
+    left: 25%;
+
+}
+
+.icon-3 {
+    left: 50%;
+
+}
+
+.icon-4 {
+    right: 23%;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .weather-card {font-size: 1rem;}
+    .sun-details {font-size: .7rem;}
+    .weather-details {font-size: .8rem;}
+    .map {margin-top: 18%;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .weather-card {font-size: .7rem; padding-top: 5%;}
+    .sun-details {font-size: .5rem;}
+    .weather-details {font-size: .5rem;}
+    .map {margin-top: 25%;}
+} 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .weather-card {font-size: .4rem; padding-top: 5%;}
+    .sun-details {font-size: .2rem;}
+    .weather-details {font-size: .3rem;}
+    .map {margin-top: 35%;}
+} 
+
+
+
+
+

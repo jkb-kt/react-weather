@@ -1,0 +1,34 @@
+.loading {
+    margin-top: 3%;
+    
+}
+
+.sun {
+    width: 20%;
+    height: auto;
+    animation: load 2s, sun infinite linear 15s 2s;
+}
+
+@keyframes sun {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes load {
+    from {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
