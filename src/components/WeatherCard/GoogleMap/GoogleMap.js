@@ -19,7 +19,7 @@ class GoogleMap extends Component {
         <div className="map">
         
           <GoogleMapReact
-            bootstrapURLKeys={{ key: 'API_KEY' }}
+            bootstrapURLKeys={{ key: 'AIzaSyDKfNDKseU9ETiOvwcyUYozmlymIoyr8vg' }}
             defaultCenter={{lat: this.props.lat, lng: this.props.lon}}
             defaultZoom={8}
             onGoogleApiLoaded={({map, maps}) => this.renderMarkers(map, maps)}
