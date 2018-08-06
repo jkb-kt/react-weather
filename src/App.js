@@ -70,7 +70,7 @@ class App extends Component {
 
   apiRequest = async (finalCitiesArray) => {
     const weatherArrayPromises = await  finalCitiesArray.map((item) => {
-      return (fetch("https://api.openweathermap.org/data/2.5/weather?id="+item.id+"8c88d485c3fb703d14d57e7e5b22d18b")
+      return (fetch("https://api.openweathermap.org/data/2.5/weather?id="+item.id+"&appid=8c88d485c3fb703d14d57e7e5b22d18b")
       .then(response => {
         return response.json();
       }))
